@@ -2,27 +2,31 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>3DS 2026 - Avelino</title>
+    <title>3DS - Portal de Aulas</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 20px; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; }
-        .aula-card { 
-            display: block; 
-            padding: 15px; 
-            margin: 10px 0; 
-            background: #f4f4f4; 
-            text-decoration: none; 
-            color: #333; 
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .aula-card:hover { background: #3498db; color: white; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px; line-height: 1.6; }
+        .disciplina { color: #2c3e50; border-bottom: 3px solid #3498db; display: inline-block; }
+        .lista-aulas { list-style: none; padding: 0; }
+        .aula-item { background: #f9f9f9; margin: 10px 0; padding: 15px; border-left: 5px solid #3498db; }
+        .btn { text-decoration: none; background: #3498db; color: white; padding: 5px 10px; border-radius: 3px; font-size: 0.9em; }
+        .btn-code { background: #27ae60; }
     </style>
 </head>
 <body>
-    <h1>Repositório de Aulas - 3º Ano</h1>
-    <p>Selecione a aula abaixo para visualizar o projeto rodando:</p>
+    <h1 class="disciplina">📱 Desenvolvimento de Sistemas - 2026</h1>
+    <p>Professor: Avelino</p>
 
-    <a href="./Aula_01_Contador/" class="aula-card">🚀 Aula 01: Contador de Cliques</a>
-    </body>
+    <ul class="lista-aulas">
+        <li class="aula-item">
+            <strong>Aula 01: Contador Mobile (React Native)</strong><br><br>
+            <a class="btn btn-code" href="https://github.com/jerog1971/3ds-2026-Avelino/tree/main/Aula_01_Contador">Ver Código Fonte</a>
+        </li>
+        
+        <li class="aula-item">
+            <strong>Aula 02: Introdução à Web (HTML/CSS)</strong><br><br>
+            <a class="btn" href="./Aula_02_Web/index.html">Ver Projeto Online</a>
+            <a class="btn btn-code" href="https://github.com/jerog1971/3ds-2026-Avelino/tree/main/Aula_02_Web">Ver Código</a>
+        </li>
+    </ul>
+</body>
 </html>
